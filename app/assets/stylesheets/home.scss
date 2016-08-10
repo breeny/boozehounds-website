@@ -1170,7 +1170,7 @@
 		justify-content: center;
 		padding: 8em 4em 6em 4em;
 		min-height: 70vh;
-		background-image: url("iphone-youtube-min.jpg");
+		background-image: image-url("iphone-youtube-min.jpg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1244,7 +1244,7 @@
 
       #banner h1:before {
         content: '';
-        background-image: url("logo.png");
+        background-image: image-url("logo.png");
         background-position: center 50%;
         background-repeat: no-repeat;
         background-size: contain;
@@ -1257,7 +1257,7 @@
       }
 
 		#banner .more {
-			background-image: url("arrow.svg");
+			background-image: image-url("arrow.svg");
 			background-position: center 1.35em;
 			background-repeat: no-repeat;
 			background-size: auto;
