@@ -12,6 +12,21 @@
 
 <!-- Main -->
 <div id="main">
+	<div class="inner">
+		<h2>Featured Videos</h2>
+		<div class="thumbnails">
+			<% @playlist.playlist_items.first(6).each do |item| %>
+				<div class="box">
+					<a href="https://youtube.com/watch?v=<%= item.video.id %>" class="image fit"><img src="http://img.youtube.com/vi/<%= item.video.id %>/hqdefault.jpg"/></a>
+					<div class="inner">
+						<h3><%= item.title %></h3>
+						<p class="fn_clamp"><%= item.video.description %></p>
+						<a href="https://youtube.com/watch?v=<%= item.video.id %>" class="button style2 fit">Watch</a>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
 	<!-- <div class="inner">
 
 		<div class="thumbnails">
@@ -86,10 +101,9 @@
 					<h3>Andrew "Breeny" Breen</h3>
 					<p>Anti-buff, anti-most things. Very positive person. Anti-positivity.</p>
 					<ul class="icons">
-						<li><a href="http://twitter.com/breeny592" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="http://twitter.com/breeny92" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 					</ul>
 				</div>
-
 				<div class="box">
 					<div class="image fit">
 						<img src="<%= asset_path('slidge.png') %>" />
