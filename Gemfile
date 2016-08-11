@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'font-awesome-rails'
 gem 'yt'
+gem 'google-analytics-rails', '1.1.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

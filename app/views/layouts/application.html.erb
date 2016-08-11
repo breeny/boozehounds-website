@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Boozehounds | You take every shot you miss</title>
+    <title>BoozeHounds | Gameplays and drinking games</title>
+    <meta name="description" content="BoozeHounds (bo͞ozhounds), noun: A group of people making idiots of themselves on the internet while playing games.">
     <%= favicon_link_tag asset_path('favicon.ico') %>
     <%= csrf_meta_tags %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= analytics_init if GoogleAnalytics.valid_tracker? %>
   </head>
 
   <body>
