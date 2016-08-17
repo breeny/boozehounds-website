@@ -11,16 +11,44 @@
   </head>
 
   <body>
-    <nav clas="nav">
-      <ul>
+    <nav class="nav">
+      <img class="logo" src="<%= asset_path('logo.png') %>" />
+      <ul class="nav__links">
         <li>
           <a href="#featured">Featured Videos</a>
         </li>
         <li>
-          <a href="#">About Us</a>
+          <a href="#about">About Us</a>
         </li>
       </ul>
+      <ul class="nav__social icons">
+        <li>
+          <a href="https://www.youtube.com/channel/UCvQFwX6Y4ED4_PJ7nLu4npA" class="icon fa-youtube-play"><span class="label">Youtube</span></a>
+        </li>
+        <li><a href="http://twitter.com/boozehounds_yt" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+        <li><a href="http://instagram.com/boozehounds_yt" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+      </ul>
     </nav>
+    
     <%= yield %>
+
+    <footer id="footer">
+    	<div class="inner">
+    		<h2>Follow us on social media</h2>
+    		<p> </p>
+
+    		<ul class="icons">
+    			<li>
+    				<a href="https://www.youtube.com/channel/UCvQFwX6Y4ED4_PJ7nLu4npA" class="icon fa-youtube-play"><span class="label">Youtube</span></a>
+    			</li>
+    			<li><a href="http://twitter.com/boozehounds_yt" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+    			<li><a href="http://instagram.com/boozehounds_yt" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+    			<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+    		</ul>
+    		<p class="copyright">Design by: <a href="https://templated.co">TEMPLATED</a>.</p>
+    		<p>Made with <%= fa_icon "heart" %> in Sydney</p>
+    	</div>
+    </footer>
+
   </body>
 </html>

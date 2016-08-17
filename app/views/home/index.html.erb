@@ -12,7 +12,7 @@
 
 <!-- Main -->
 <div id="main">
-	<div class="inner">
+	<div class="inner" id="featured">
 		<h2>Featured Videos</h2>
 		<div class="thumbnails">
 			<% @playlist.each do |item| %>
@@ -28,7 +28,7 @@
 		</div>
 	</div>
 
-	<div class="inner">
+	<div class="inner" id="about">
 		<h2>Who are the Boozehounds?</h2>
 		<p>Founded in Sydney Australia, Boozehounds are a Youtube/video/not very good group of people who drink a lot of alcohol and sometimes play games.
 			Or something like that. It's members include:</p>
@@ -74,22 +74,3 @@
 			</div>
 	</div>
 </div>
-
-<!-- Footer -->
-<footer id="footer">
-	<div class="inner">
-		<h2>Follow us on social media</h2>
-		<p> </p>
-
-		<ul class="icons">
-			<li>
-				<a href="https://www.youtube.com/channel/UCvQFwX6Y4ED4_PJ7nLu4npA" class="icon fa-youtube-play"><span class="label">Youtube</span></a>
-			</li>
-			<li><a href="http://twitter.com/boozehounds_yt" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-			<li><a href="http://instagram.com/boozehounds_yt" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-			<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
-		</ul>
-		<p class="copyright">Design by: <a href="https://templated.co">TEMPLATED</a>.</p>
-		<p>Made with <%= fa_icon "heart" %> in Sydney</p>
-	</div>
-</footer>
