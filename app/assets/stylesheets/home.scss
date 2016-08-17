@@ -1318,6 +1318,7 @@ body.is-loading #banner:before {
 		border-bottom: none;
 		font-size: 20px;
 		font-weight: bold;
+		transition: font-size 0.5s;
 	}
 	.logo {
 		height: 100px;
@@ -1338,18 +1339,25 @@ body.is-loading #banner:before {
 		a {
 			color: $white;
 			border-width: 0px;
+			transition: background 0.5s ease-out, color 0.5s ease-out;
+
+			&:hover {
+				transition: background 0.5s ease-out, color 0.5s ease-out;
+			}
 		}
 
-		.fa-instagram {
+
+		.fa-instagram:hover {
 			background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
 		}
 
-		.fa-twitter {
+		.fa-twitter:hover {
 			background: #1a8bf0;
 		}
 
-		.fa-youtube-play {
-			background: #e52d27;
+		.fa-youtube-play:hover {
+			color: #e52d27;
+			background: $white;
 		}
 	}
 }
