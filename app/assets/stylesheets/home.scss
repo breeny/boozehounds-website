@@ -1324,6 +1324,12 @@ body.is-loading #banner:before {
 		display: inline-block;
 		vertical-align: middle;
 	}
+	.nav__links {
+		a:hover {
+			font-size: 24px;
+			transition: font-size 0.5s;
+		}
+	}
 
 	.nav__social {
 		float: right;
@@ -1331,7 +1337,19 @@ body.is-loading #banner:before {
 
 		a {
 			color: $white;
-			border-color: $white;
+			border-width: 0px;
+		}
+
+		.fa-instagram {
+			background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+		}
+
+		.fa-twitter {
+			background: #1a8bf0;
+		}
+
+		.fa-youtube-play {
+			background: #e52d27;
 		}
 	}
 }
