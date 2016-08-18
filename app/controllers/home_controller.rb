@@ -4,7 +4,9 @@ class HomeController < ApplicationController
     _playlist = Yt::Playlist.new url: 'youtube.com/playlist?list=PL6MAHUvxQ94Z_EVuKAr-UTDkXLDBt78Tf'
     @playlist = Array.new
     _playlist.playlist_items.each do |item|
-      @playlist.push(item)
+      if !item.private?
+        @playlist.push(item)
+      end
     end
     @playlist = @playlist.reverse
   end

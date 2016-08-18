@@ -1108,6 +1108,10 @@ input[type="submit"].style3:active {
 	text-align: center;
 	overflow: hidden;
 	clear: both;
+
+	@media screen and (max-width: 699px) {
+
+	}
 }
 #banner .inner {
 	text-align: center;
@@ -1312,6 +1316,41 @@ body.is-loading #banner:before {
 		display: inline-block;
 		padding: 0 10px;
 	}
+
+	@media screen and (max-width: 699px) {
+		.logo {
+			display: none;
+		}
+
+		.nav__social {
+			display: block;
+			margin: auto;
+			font-size: 12px;
+			float: none;
+			text-align: center;
+		}
+
+		.nav__links {
+			text-align: center;
+			display: block;
+			margin: auto;
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	@media screen and (min-width: 700px) {
+		.logo {
+			height: 100px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.nav__social {
+			float: right;
+		}
+	}
+
 	a {
 		text-decoration: none;
 		text-transform: uppercase;
@@ -1320,11 +1359,7 @@ body.is-loading #banner:before {
 		font-weight: bold;
 		transition: font-size 0.5s;
 	}
-	.logo {
-		height: 100px;
-		display: inline-block;
-		vertical-align: middle;
-	}
+
 	.nav__links {
 		a:hover {
 			font-size: 24px;
@@ -1333,7 +1368,6 @@ body.is-loading #banner:before {
 	}
 
 	.nav__social {
-		float: right;
 		padding: 0;
 
 		a {
